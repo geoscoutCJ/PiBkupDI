@@ -15,6 +15,10 @@ Dependencies:
 
 * Sudo/root access
 
+The commands cheat sheet can be downloaded locally using: 
+``` 
+sudo wget https://github.com/geoscoutCJ/PiBkupDI/blob/main/commands.txt
+```
 
 ## Background
 
