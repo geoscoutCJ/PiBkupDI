@@ -1,0 +1,18 @@
+#Download, enable execute, and move pishrink.
+wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
+sudo chmod +x pishrink.sh
+sudo mv pishrink.sh /usr/local/bin
+
+#check mount points
+lsblk
+
+#copy data
+sudo pv -tpreb /dev/mmcblk0 | dd of=[mount point]/myimg.img bs=1M
+
+sudo dd if=/dev/mmcblk0 of=[mount point]/myimg.img bs=1M status=progress
+
+#move to mount point
+cd /media/pi/pibkup
+
+#shrink copy and gzip
+sudo pishrink.sh -z myimg.img
