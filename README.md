@@ -17,7 +17,7 @@ Dependencies:
 
 The commands cheat sheet can be downloaded locally using: 
 ``` 
-sudo wget https://github.com/geoscoutCJ/PiBkupDI/blob/main/commands.txt
+sudo wget https://raw.githubusercontent.com/geoscoutCJ/PiBkupDI/main/commands.txt
 ```
 
 ## Background
