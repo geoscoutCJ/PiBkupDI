@@ -26,11 +26,11 @@ There are a few ways to backup a Raspberry Pi. You can use Raspberry Pi OS’s S
 
 ## Creating the Disk Image
 
-1.  Format a USB Flash or hard drive as either NTFS (if you are using Windows on your PC and plan to read this drive on a PC) or EXT4 (for Linux). Make sure to give the drive a volume name that you remember (ex: “pibkup” in our case). You can also format the drive directly on the Raspberry Pi if you like. At this point, we will assume that the flash drive is larger than the existing SD card. If not, be sure to read: [How To Shrink a Partition on Raspberry Pi using the GUI](https://github.com/geoscoutCJ/PiBkupDI#how-to-shrink-a-partition-on-raspberry-pi-using-the-gui)
+1. Format a USB Flash or hard drive as either NTFS (if you are using Windows on your PC and plan to read this drive on a PC) or EXT4 (for Linux). Make sure to give the drive a volume name that you remember (ex: “pibkup” in our case). You can also format the drive directly on the Raspberry Pi if you like. At this point, we will assume that the flash drive is larger than the existing SD card. If not, be sure to read: [How To Shrink a Partition on Raspberry Pi using the GUI](https://github.com/geoscoutCJ/PiBkupDI#how-to-shrink-a-partition-on-raspberry-pi-using-the-gui)
 
-2.  Connect the external drive to your Raspberry Pi.
+2. Connect the external drive to your Raspberry Pi.
 
-3.  Install pishrink.sh on your Raspberry Pi and copy it to the /usr/local/bin folder by typing:
+3. Install pishrink.sh on your Raspberry Pi and copy it to the /usr/local/bin folder by typing:
   
 ```
 wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
