@@ -26,7 +26,7 @@ There are a few ways to backup a Raspberry Pi. You can use Raspberry Pi OS’s S
 
 ## Creating the Disk Image
 
-1.  Format a USB Flash or hard drive as either NTFS (if you are using Windows on your PC and plan to read this drive on a PC) or EXT4 (for Linux). Make sure to give the drive a volume name that you remember (ex: “pibkup” in our case). You can also format the drive directly on the Raspberry Pi if you like. At this point, we will assume that the flash drive is larger than the existing SD card. If not, be sure to read: [How To Shrink a Partition on Raspberry Pi using the GUI](https://github.com/geoscoutCJ/PiBkupDI/edit/main/README.md#how-to-shrink-a-partition-on-raspberry-pi-using-the-gui)
+1.  Format a USB Flash or hard drive as either NTFS (if you are using Windows on your PC and plan to read this drive on a PC) or EXT4 (for Linux). Make sure to give the drive a volume name that you remember (ex: “pibkup” in our case). You can also format the drive directly on the Raspberry Pi if you like. At this point, we will assume that the flash drive is larger than the existing SD card. If not, be sure to read: [How To Shrink a Partition on Raspberry Pi using the GUI](https://github.com/geoscoutCJ/PiBkupDI#how-to-shrink-a-partition-on-raspberry-pi-using-the-gui)
 
 2.  Connect the external drive to your Raspberry Pi.
 
@@ -54,7 +54,7 @@ However, you can’t and shouldn’t do that if it’s already mounted.
 
 5. Copy all your data to an img file. I prefer to use ```pv``` paired with ```dd``` so I get a progress bar but you can use either.
 
-    - NOTE: If you are using a shrunk partition, this command will need to include the _count_ attribute. See [How To Shrink ...](https://github.com/geoscoutCJ/PiBkupDI/edit/main/README.md#how-to-shrink-a-partition-on-raspberry-pi-using-the-gui) for more information.
+    - NOTE: If you are using a shrunk partition, this command will need to include the _count_ attribute. See [How To Shrink ...](https://github.com/geoscoutCJ/PiBkupDI#how-to-shrink-a-partition-on-raspberry-pi-using-the-gui) for more information.
 
 ```sudo pv -tpreb /dev/mmcblk0 | dd of=[mount point]/myimg.img bs=1M```
 
